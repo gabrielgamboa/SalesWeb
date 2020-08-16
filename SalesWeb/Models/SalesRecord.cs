@@ -12,18 +12,17 @@ namespace SalesWeb.Models
         public DateTime Date { get; set; }
         public int MyProperty { get; set; }
         public double Amount { get; set; }
-        public SallesStatus Status { get; set; }
+        public SaleStatus Status { get; set; }
         public Seller Seller { get; set; }
 
         public SalesRecord ()
         {
         }
 
-        public SalesRecord (int id, DateTime date, int myProperty, double amount, SallesStatus status, Seller seller)
+        public SalesRecord (int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Id = id;
             Date = date;
-            MyProperty = myProperty;
             Amount = amount;
             Status = status;
             Seller = seller;
